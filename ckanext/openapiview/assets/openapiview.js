@@ -1,4 +1,4 @@
-ckan.module('openapiview', function (jQuery) {
+ckan.module('openapi_view', function (jQuery) {
   return {
     options: {
       parameters: {

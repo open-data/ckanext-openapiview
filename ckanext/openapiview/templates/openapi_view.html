@@ -10,18 +10,16 @@
       </div>
     </pre>
   </div>
+{% endblock %}
 
-  {% block scripts %}
-    <script>
-      var preload_resource = {{ h.literal(resource_json) }};
-      var resource_url = {{ h.literal(resource_url) }};
-      var preview_metadata = {{ h.literal(preview_metadata) }};
-    </script>
-  {% endblock %}
-
-  {% block styles %}{% endblock %}
-  {% block custom_styles %}{% endblock %}
+{% block scripts %}
+  <script>
+    var resource_url = {{ resource.url | tojson }};
+  </script>
 
   {% asset 'ckanext-openapiview/main' %}
 {% endblock %}
+
+{% block styles %}{% endblock %}
+{% block custom_styles %}{% endblock %}
 
