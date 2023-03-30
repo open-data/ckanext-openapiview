@@ -20,6 +20,8 @@ class OpenAPIViewPlugin(p.SingletonPlugin):
 
 
     def update_config(self, config):
+        if not p.toolkit.check_ckan_version('2.9'):
+            p.toolkit.add_template_directory(config, '2.8_templates')
         p.toolkit.add_template_directory(config, 'templates')
         p.toolkit.add_resource('assets', 'ckanext-openapiview')
 
@@ -36,7 +38,7 @@ class OpenAPIViewPlugin(p.SingletonPlugin):
         return format_lower == 'json'
 
     def view_template(self, context, data_dict):
-        return 'openapi_view.html'
+        return 'openapiview/openapi_view.html'
 
     def form_template(self, context, data_dict):
-        return 'openapi_form.html'
+        return 'openapiview/openapi_form.html'
