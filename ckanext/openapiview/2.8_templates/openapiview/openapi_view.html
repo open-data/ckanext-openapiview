@@ -14,7 +14,7 @@
 
 {% block scripts %}
   <script>
-    var resource_url = "{{ resource.url }}";
+    var resource_url = "{{ resource.url.replace('"', '') }}";
   </script>
 
   {% resource 'ckanext-openapiview/main' %}
