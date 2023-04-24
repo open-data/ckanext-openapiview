@@ -1,0 +1,15 @@
+/* FIXME: implement i18n properly in swagger-ui upstream */
+
+html[lang=fr] .swagger-ui span.servers-title {
+  visibility: hidden;
+}
+html[lang=fr] .swagger-ui .servers-title:before {
+  visibility: visible; content: "serveurs";
+}
+
+html[lang=fr] .swagger-ui .btn.authorize span {
+  display: none;
+}
+html[lang=fr] .swagger-ui .btn.authorize:before {
+  content: "autoriser";
+}

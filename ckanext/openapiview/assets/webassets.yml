@@ -2,6 +2,7 @@ main-css:
   output: ckanext-openapiview/%(version)s_openapi.css
   contents:
     - vendor/swagger-ui-4.18.2.css
+    - css/lang.css
 
 main:
   output: ckanext-openapiview/%(version)s_openapi.js
