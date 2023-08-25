@@ -7,9 +7,481 @@ html[lang=fr] .swagger-ui .servers-title:before {
   visibility: visible; content: "serveurs";
 }
 
-html[lang=fr] .swagger-ui .btn.authorize span {
-  display: none;
+/*Terms of Service link*/
+html[lang=fr] .swagger-ui .info__tos a {
+    visibility: hidden;
 }
-html[lang=fr] .swagger-ui .btn.authorize:before {
-  content: "autoriser";
+html[lang=fr] .swagger-ui .info__tos a::before {
+    visibility: visible;
+    content: "Mandat";
+}
+
+/*Authorize button*/
+html[lang=fr] .swagger-ui .scheme-container .btn.authorize.unlocked span {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .scheme-container .btn.authorize.unlocked span::before {
+    visibility: visible;
+    content: "Autoriser";
+    font-size: 14px;
+}
+
+/*Available Authorizations header*/
+html[lang=fr] .swagger-ui .modal-ux-header h3 {
+    visibility: hidden;
+}
+html[lang=fr] .swagger-ui .modal-ux-header h3::before {
+    visibility: visible;
+    content: "Autorisations disponibles";
+}
+
+/*Name: Authorization label*/
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(2) p {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(2) p::before {
+    visibility: visible;
+    content: "Nom : ";
+    font-size: 12px;
+}
+
+/*In: Header label*/
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(3) p {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(3) p::before {
+    visibility: visible;
+    content: "Dans : ";
+    font-size: 12px;
+}
+
+/*Value: label*/
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(4) label {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .auth-container .wrapper:nth-of-type(4) label::before {
+    visibility: visible;
+    content: "Valeur:";
+    font-size: 12px;
+}
+
+/*Authorize (Submit) button*/
+html[lang=fr] .swagger-ui .auth-btn-wrapper button.btn.modal-btn.auth.authorize.button {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .auth-btn-wrapper button.btn.modal-btn.auth.authorize.button::before {
+    content: "Autoriser";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Authorize (Close) button*/
+html[lang=fr] .swagger-ui .auth-btn-wrapper button.btn.modal-btn.auth.btn-done.button {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .auth-btn-wrapper button.btn.modal-btn.auth.btn-done.button::before {
+    content: "Fermer";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Servers label*/
+html[lang=fr] .swagger-ui .scheme-container span {
+    visibility: hidden;
+}
+html[lang=fr] .swagger-ui .scheme-container span::before {
+    visibility: visible;
+    content: "Serveurs";
+}
+
+/*Parameters Name header label*/
+html[lang=fr] .swagger-ui .parameters-container .col_header.parameters-col_name {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .parameters-container .col_header.parameters-col_name::after {
+    visibility: visible;
+    content: "Nom";
+    font-size: 12px;
+}
+
+/*Parameters Name header label*/
+html[lang=fr] .swagger-ui .parameters-container .col_header.parameters-col_name {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .parameters-container .col_header.parameters-col_name::after {
+    visibility: visible;
+    content: "Nom";
+    font-size: 12px;
+}
+
+/*Parameters label*/
+html[lang=fr] .swagger-ui .tab-item.active span {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .tab-item.active span::before {
+    visibility: visible;
+    content: "Param\00E8tres";
+    font-size: 14px;
+}
+
+/*Responses label*/
+html[lang=fr] .swagger-ui .responses-wrapper .opblock-section-header h4 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .opblock-section-header h4::before {
+    visibility: visible;
+    content: "R\00E9ponses";
+    font-size: 14px;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > h4 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > h4::after {
+    visibility: visible;
+    content: "R\00E9ponses";
+    font-size: 12px;
+}
+
+/*Live Response - Undocumented status code*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_status .response-undocumented i {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_status .response-undocumented i::after {
+    visibility: visible;
+    content: "Inconnu";
+    font-size: 11px;
+}
+
+/*Live Response - Details column header*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .col_header.response-col_description {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .col_header.response-col_description::after {
+    visibility: visible !important;
+    content: "D\00E9 tails";
+    font-size: 12px;
+}
+
+/*Live Response - request url*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > div:not(.curl-command) h4 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > div:not(.curl-command) h4::after {
+    visibility: visible;
+    content: "Demander l\00B4 adresse URL";
+    font-size: 12px;
+}
+
+/*Live Response - request url*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > h4:nth-of-type(1) {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > h4:nth-of-type(1):after {
+    visibility: visible;
+    content: "R\00E9 ponse du serveur";
+    font-size: 12px;
+}
+
+/*Response - Media type field labels*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__title {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__title::after {
+    visibility: visible;
+    content: "Type de support";
+    font-size: 11.2px;
+    margin-bottom: 2.24px;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__accept-message {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__accept-message::after {
+    visibility: visible;
+    content: "Contr\00F4le de l\02BC en-t\00EAte d\02BC acceptation.";
+    font-size: 11.2px;
+}
+
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > h4 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > h4::after {
+    visibility: visible;
+    content: "R\00E9ponses";
+    font-size: 12px;
+}
+
+/*Live Response - request url*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > div:not(.curl-command) h4 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner > div > div > div:not(.curl-command) h4::after {
+    visibility: visible;
+    content: "Demander l\00B4 adresse URL";
+    font-size: 12px;
+}
+
+/*Live Response - response body*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_description > div:first-of-type h5 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_description > div:first-of-type h5::after {
+    visibility: visible;
+    content: "Texte des r\00E9 ponses";
+    font-size: 12px;
+}
+
+/*Live Response - response headers*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_description > div:last-of-type h5 {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .responses-table.live-responses-table .response-col_description > div:last-of-type h5::after {
+    visibility: visible;
+    content: "En-t\00EA tes des r\00E9 ponses";
+    font-size: 12px;
+}
+
+/*Response - Media type field labels*/
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__title {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__title::after {
+    visibility: visible;
+    content: "Type de support";
+    font-size: 11.2px;
+    margin-bottom: 2.24px;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__accept-message {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-wrapper .responses-inner .response-control-media-type .response-control-media-type__accept-message::after {
+    visibility: visible;
+    content: "Contr\00F4le de l\02BC en-t\00EAte d\02BC acceptation.";
+    font-size: 11.2px;
+}
+
+/*Links label*/
+html[lang=fr] .swagger-ui .responses-header td.col.col_header.response-col_links {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .responses-header td.col.col_header.response-col_links::before {
+    visibility: visible;
+    content: "Liens";
+    font-size: 14px;
+    padding-left: 2em;
+}
+
+/*No links label*/
+html[lang=fr] .swagger-ui .response  .response-col_links i {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .response  .response-col_links i::before {
+    visibility: visible;
+    content: "Aucun lien";
+    font-size: 14px;
+}
+
+/*No parameters label*/
+html[lang=fr] .swagger-ui .parameters-container .opblock-description-wrapper p {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .parameters-container .opblock-description-wrapper p::before {
+    visibility: visible;
+    content: "Aucun param\00E8tre";
+    font-size: 14px;
+} 
+
+/*Try it out button*/
+html[lang=fr] .swagger-ui .try-out button.btn.try-out__btn {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .try-out button.btn.try-out__btn::before {
+    content: "\00C0\0020 essayer";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Try it out (Cancel) button*/
+html[lang=fr] .swagger-ui .try-out button.btn.try-out__btn.cancel {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .try-out button.btn.try-out__btn.cancel::before {
+    content: "Annuler";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Execute button*/
+html[lang=fr] .swagger-ui .execute-wrapper button.btn.execute.opblock-control__btn {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .execute-wrapper button.btn.execute.opblock-control__btn::before {
+    content: "Ex\00E8 cuter";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Execute (submit) button*/
+html[lang=fr] .swagger-ui .btn-group button.btn.execute.opblock-control__btn {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .btn-group button.btn.execute.opblock-control__btn::before {
+    content: "Ex\00E8 cuter";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Execute (Clear) button*/
+html[lang=fr] .swagger-ui .btn-group button.btn.btn-clear.opblock-control__btn {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .btn-group button.btn.btn-clear.opblock-control__btn::before {
+    content: "Effacer les donn\00E9 es";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Request body label*/
+html[lang=fr] .swagger-ui .opblock-section.opblock-section-request-body h4 {
+    visibility: hidden;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .opblock-section.opblock-section-request-body h4::before {
+    visibility: visible;
+    content: "Corps de la demande";
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Required label*/
+html[lang=fr] .swagger-ui .opblock-section.opblock-section-request-body h4::after {
+    visibility: visible;
+    content: "Requis";
+}
+
+/*Examples select field label*/
+html[lang=fr] .swagger-ui .examples-select span.examples-select__section-label {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .examples-select span.examples-select__section-label::after {
+    visibility: visible;
+    content: "Exemples :";
+    font-size: 0.9rem;
+}
+
+/*Example value button*/
+html[lang=fr] .swagger-ui .model-example li.tabitem.active button {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .model-example li.tabitem.active button::before {
+    content: "Exemple de valeur";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Schema button*/
+html[lang=fr] .swagger-ui .model-example li.tabitem button {
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .model-example li.tabitem button::before {
+    content: "Sch\00E9 ma";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/*Default value*/
+html[lang=fr] .swagger-ui .parameters-col_description .parameter__default.renderedMarkdown p i {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .parameters-col_description .parameter__default.renderedMarkdown p i::before {
+    visibility: visible;
+    content: "Valeur par d\00E9 faut";
+    font-size: 14px;
+}
+
+/*Available values*/
+html[lang=fr] .swagger-ui .parameter__enum.renderedMarkdown p i {
+    visibility: hidden;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .parameter__enum.renderedMarkdown p i::before {
+    visibility: visible;
+    content: "Valeurs disponibles";
+    font-size: 14px;
+}
+
+/*Clear button*/
+html[lang=fr] .swagger-ui .btn-group button.btn.btn-clear.opblock-control__btn{
+    text-indent: -100vw !important;
+    line-height: 0;
+    font-size: 0;
+}
+html[lang=fr] .swagger-ui .btn-group button.btn.btn-clear.opblock-control__btn::before{
+    content: "Effacer les donn\00E9 es";
+    text-indent: 0 !important;
+    display: block;
+    line-height: 1;
+    font-size: 14px;
 }
