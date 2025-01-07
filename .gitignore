@@ -1,1 +1,3 @@
 *.egg-info/**
+**/vendor/**
+**/node_modules/**
