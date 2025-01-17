@@ -29,7 +29,7 @@ jobs:
             source /home/runner/work/app/bin/activate
             pip install --upgrade setuptools==70.0.0
             pip install --upgrade pip==23.2.1
-            pip install -e 'git+https://github.com/open-data/ckan@canada-v2.10#egg=ckan' -r 'https://raw.githubusercontent.com/open-data/ckan/canada-v2.10/requirement-setuptools.txt' -r 'https://raw.githubusercontent.com/open-data/ckan/canada-v2.10/requirements.txt' -r 'https://raw.githubusercontent.com/open-data/ckan/canada-v2.10/dev-requirements.txt'
+            pip install -e 'git+https://github.com/ckan/ckan@master#egg=ckan' -r 'https://raw.githubusercontent.com/ckan/ckan/master/requirements.txt' -r 'https://raw.githubusercontent.com/ckan/ckan/master/dev-requirements.txt'
             pip install -e /home/runner/work/app/src/ckanext-openapiview/.
             find /home/runner/work/app -name '*.pyc' -delete
       - name: Install node deps
