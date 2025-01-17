@@ -31,7 +31,7 @@ jobs:
             pip install --upgrade pip==23.2.1
             pip install -e 'git+https://github.com/ckan/ckan@master#egg=ckan' -r 'https://raw.githubusercontent.com/ckan/ckan/master/requirements.txt' -r 'https://raw.githubusercontent.com/ckan/ckan/master/dev-requirements.txt'
             pip install -e /home/runner/work/app/src/ckanext-openapiview/.
-            pip install --upgrade setuptools
+            pip install --upgrade setuptools==44.1.0
             find /home/runner/work/app -name '*.pyc' -delete
       - name: Install node deps
         if: steps.pydepends.outcome == 'success'
