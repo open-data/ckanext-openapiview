@@ -1,0 +1,21 @@
+{
+  "name": "ckanext-openapiview",
+  "version": "1.0.0",
+  "description": "CKAN Open API View Plugin",
+  "dependencies": {},
+  "devDependencies": {
+    "pyright": "1.1.386"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-data/ckanext-openapiview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-data/ckanext-openapiview/issues"
+  },
+  "homepage": "https://github.com/open-data/ckanext-openapiview#readme"
+}

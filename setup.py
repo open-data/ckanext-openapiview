@@ -7,7 +7,8 @@ setup(
     version=version,
     description="View plugin for OpenAPI (swagger) resources",
     long_description="",
-    classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    classifiers=[],
     keywords='ckan',
     author='Ian Ward',
     author_email='ian@excess.org',
@@ -17,10 +18,8 @@ setup(
     namespace_packages=['ckanext'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-    ],
-    entry_points=\
-    """
+    install_requires=[],
+    entry_points="""
     [ckan.plugins]
     openapi_view=ckanext.openapiview.plugin:OpenAPIViewPlugin
     """,
